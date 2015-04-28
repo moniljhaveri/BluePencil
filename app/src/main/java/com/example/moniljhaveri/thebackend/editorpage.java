@@ -1,9 +1,9 @@
 package com.example.moniljhaveri.thebackend;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -14,7 +14,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
-import android.graphics.Typeface;
 
 
 
@@ -87,8 +86,9 @@ public class editorpage extends Activity {
             switch (view.getId()) {
                 case (R.id.back_button):
                {
-                   Intent intent = new Intent(editorpage.this, MainActivity.class);
-                   startActivity(intent);
+                   //Intent intent = new Intent(editorpage.this, MainActivity.class);
+                   //startActivity(intent);
+                   finish();
                    break;
                }
                case (R.id.filter_button):
